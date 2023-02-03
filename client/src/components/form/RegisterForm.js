@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./form.scss";
 const RegisterForm = ({ handleSubmit, fullName, setFullName, email, setEmail, password, setPassword }) => {
     return (
         <form onSubmit={handleSubmit}>

@@ -1,7 +1,5 @@
 import User from "../models/user"
 
-
-
 export const registerUser = async (req, res) => {
     const { password, email, fullName } = req.body;
 
@@ -16,6 +14,7 @@ export const registerUser = async (req, res) => {
     //register
     const user = new User(req.body);
 
+    //save in database
     try {
         await user.save();
         console.log("USER CREATED", user)
